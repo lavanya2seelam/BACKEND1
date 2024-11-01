@@ -3,7 +3,7 @@ require('dotenv').config()
 const app=express();
 const port=4000;
 
-const jsonobject={
+const jsonobject1={
     "library": {
       "name": "City Library",
       "location": {
@@ -55,7 +55,7 @@ app.get('/',(req,res)=>{
 });
 
 app.get('/jsonobj',(req,res)=>{
-    res.json(jsonobject);
+    res.json(jsonobject1);
 })
 
 app.get('/twitter',(req,res)=>{
